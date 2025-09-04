@@ -1,0 +1,19 @@
+{
+  "name": "tap-monorepo",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd apps/backend && cargo watch -x run",
+    "dev:web": "cd apps/web_astro && pnpm dev",
+    "dev": "pnpm run -r dev",
+    "build:backend": "cd apps/backend && cargo build --release",
+    "build:web": "cd apps/web_astro && pnpm build",
+    "build": "pnpm run -r build",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "prettier": "^3.2.5",
+    "husky": "^9.0.11"
+  }
+}
