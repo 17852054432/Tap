@@ -3,10 +3,10 @@
   "private": true,
   "scripts": {
     "dev:backend": "cd apps/backend && cargo watch -x run",
-    "dev:web": "cd apps/web_astro && pnpm dev",
+    "dev:web": "cd apps/web && pnpm dev",
     "dev": "pnpm run -r dev",
     "build:backend": "cd apps/backend && cargo build --release",
-    "build:web": "cd apps/web_astro && pnpm build",
+    "build:web": "cd apps/web && pnpm build",
     "build": "pnpm run -r build",
     "format": "prettier --write .",
     "prepare": "husky"
